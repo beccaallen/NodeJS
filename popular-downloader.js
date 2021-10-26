@@ -11,9 +11,9 @@ rp("https://reddit.com/r/popular.json")
             let name = article.data.id;
 
             if (ext === ".jpg" || ext === ".png") {
-                rp(article.data.url)
+                rp(article.data.url, {encoding: "base64"})
                 .then(content => {
-                    fs.writeFile(path.join(__dirname,`./downloads/${name}${ext}`), content, err => {
+                    fs.writeFile(path.join(__dirname,`./downloads/${name}${ext}`), content, {encoding: "base64"}, err => {
                                 if (err) console.log(err);
                             })
                         
