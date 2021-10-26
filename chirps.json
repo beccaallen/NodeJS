@@ -1,0 +1,16 @@
+{
+    "chirps": [
+        {
+            "username": "becca",
+            "chirp": "it's all good"
+        },
+        {
+            "username": "matt",
+            "chirp": "contrarian"
+        },
+        {
+            "username": "meghan",
+            "chirp": "prov 31"
+        }
+    ]
+}
